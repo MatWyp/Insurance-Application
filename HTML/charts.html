@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts - SkanPolis</title>
+    <link rel="stylesheet" href="CSS/charts.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo"><span class="part1">SKAN</span>POLIS</h1>
+            <a href="HTML/main.html" class="btn back">POWRÓT</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="charts-section">
+            <h2 class="section-title">ZAKUPIONE POLISY DZIĘKI NAM W ROKU 2024</h2>
+            <div class="charts-container">
+                <div class="chart">
+                    <canvas id="scatterChart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 SkanPolis. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        // Scatter Chart
+        new Chart("scatterChart", {
+            type: "scatter",
+            data: {
+                datasets: [{
+                    pointRadius: 4,
+                    pointBackgroundColor: "rgb(0,0,255)",
+                    data: [
+                        {x:50, y:7},
+                        {x:60, y:8},
+                        {x:70, y:8},
+                        {x:80, y:9},
+                        {x:90, y:9},
+                        {x:100, y:9},
+                        {x:110, y:10},
+                        {x:120, y:11},
+                        {x:130, y:14},
+                        {x:140, y:14},
+                        {x:150, y:15}
+                    ]
+                }]
+            },
+            options: {
+                legend: {display: false},
+                scales: {
+                    xAxes: [{ticks: {min: 40, max:160}}],
+                    yAxes: [{ticks: {min: 6, max:16}}],
+                }
+            }
+        });
+
+        // Line Chart
+        new Chart("lineChart", {
+            type: "line",
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                datasets: [{
+                    data: [710, 600, 800, 750, 780, 860, 900, 842, 790, 700, 650, 900],
+                    borderColor: '#36A2EB',
+                    backgroundColor: '#9BD0F5',
+                }]
+            },
+            options: {
+                legend: {display: false},
+                scales: {
+                    xAxes: [{ticks: {min: 0, max:13}}],
+                    yAxes: [{ticks: {min: 500, max:1000}}],
+                }
+            }
+        });
+
+        // Bar Chart
+        new Chart("barChart", {
+            type: "bar",
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                datasets: [{
+                    data: [710, 600, 800, 750, 780, 860, 900, 842, 790, 700, 650, 900],
+                    backgroundColor: '#0BF005',
+                }]
+            },
+            options: {
+                legend: {display: false},
+                scales: {
+                    xAxes: [{ticks: {min: 0, max:13}}],
+                    yAxes: [{ticks: {min: 500, max:1000}}],
+                }
+            }
+        });
+    </script>
+</body>
+</html>

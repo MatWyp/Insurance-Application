@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+    /> 
+  <title>SkanPolis - Znajdź Ubezpieczenie</title>
+  <link rel="stylesheet" href="CSS/list.css">
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo"><span class="part1">SKAN</span>POLIS</h1>
+      <button class="burger-icon"><i class="fas fa-bars"></i></button>
+
+      <div class="header-buttons">
+        <a href="HTML/main.html" class="btn back">POWRÓT</a>
+        <a href="HTML/admin.html" class="btn edit">EDYCJA</a>
+        <a href="HTML/account.html" class="btn acc">MOJE KONTO</a>
+        <a href="HTML/charts.html" class="btn charts">STATYSTYKI</a>
+        <a href="HTML/index.html" class="btn logout">WYLOGUJ SIĘ</a>
+        
+      </div>
+      
+    </div>
+  </header>
+  <main>
+    
+    <section class="vehicle-info">
+      <h2>Wybrany pojazd</h2>
+      <div class="vehicle-details">
+        <p><strong>Marka:</strong> <span id="vehicle-brand"></span></p>
+        <p><strong>Model:</strong> <span id="vehicle-model"></span></p>
+        <p><strong>Data startu ubezpieczenia:</strong> <span id="insurance-start"></span></p>
+      </div>
+    </section>
+  
+    
+    <section class="offers">
+      <div class="offer recommended">
+        <div class="offer-header">
+          <span class="badge">Najtańsza oferta</span>
+        </div>
+        <div class="offer-details">
+          <h3 class="company-name">[NAZWA UBEZPIECZALNI]</h3>
+          <div class="offer-info">
+            <p>[TYP UBEZPIECZENIA]</p>
+            <p><strong>X zł</strong> lub X zł x Y rat</p>
+          </div>
+          <a href="HTML/detail.html" class="btn choose-btn">Wybierz ofertę</a>
+        </div>
+      </div>
+  
+     
+      <div class="offer">
+        <div class="offer-details">
+          <h3 class="company-name">[NAZWA UBEZPIECZALNI]</h3>
+          <div class="offer-info">
+            <p>[TYP UBEZPIECZENIA]</p>
+            <p><strong>X zł</strong> lub X zł x Y rat</p>
+          </div>
+          <a href="HTML/detail.html" class="btn choose-btn">Wybierz ofertę</a>
+        </div>
+      </div>
+  
+      <div class="offer">
+        <div class="offer-details">
+          <h3 class="company-name">[NAZWA UBEZPIECZALNI]</h3>
+          <div class="offer-info">
+            <p>Uzupełnij dane, aby wyświetlić ofertę</p>
+          </div>
+          <a href="HTML/main.html" class="btn update-btn">Uzupełnij dane</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© 2024 Skanpolis. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+  <script src="js/all.js"></script>
+</body>
+</html>
