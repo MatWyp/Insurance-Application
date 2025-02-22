@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Panel Użytkownika - SkanPolis</title>
+		<link rel="stylesheet" href="CSS/account.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-container">
+				<h1 class="logo"><span class="part1">SKAN</span>POLIS</h1>
+				<a href="HTML/main.html" class="btn back">POWRÓT</a>
+			</div>
+		</header>
+
+		<main>
+			<section class="profile">
+				<h2 class="profile-title">Twój profil</h2>
+				<div class="profile-container">
+					<!-- Sekcja danych -->
+					<div class="profile-info">
+						<p><strong>Imię:</strong> Mateusz</p>
+						<p><strong>Nazwisko:</strong> Wajcheprzełóż</p>
+						<p><strong>Email:</strong> szypkimati@example.com</p>
+						<p><strong>Telefon:</strong> +48 723 456 789</p>
+						<p>
+							<strong>Biogram:</strong> Doświadczony kierowca z pasją do
+							motoryzacji.
+						</p>
+					</div>
+
+					<div class="profile-photo">
+						<img src="img/profilowe.png" alt="Zdjęcie użytkownika" />
+					</div>
+
+					<div class="profile-buttons">
+						<button class="btn edit">Edytuj</button>
+						<button class="btn delete">Usuń</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="notifications">
+				<h2>Powiadomienia</h2>
+				<div class="notification-options">
+					<label>
+						<input
+							type="checkbox"
+							id="reminder-end"
+							aria-label="Przypomnienie o końcu ubezpieczenia"
+						/>
+						Przypomnienie o końcu ubezpieczenia
+					</label>
+					<label>
+						<input
+							type="checkbox"
+							id="new-offers"
+							aria-label="Powiadomienia o nowych ofertach"
+						/>
+						Powiadomienia o nowych ofertach
+					</label>
+				</div>
+			</section>
+
+			<section class="saved-calc">
+				<h3 class="section-title">Poprzednie kalkulacje</h3>
+				<div class="calc-container">
+					<div class="calc-card">
+						<h4 class="car-title">[Marka i Model]</h4>
+						<p class="car-details">[Dane samochodu]</p>
+						<p class="stage">Etap: <span>Kalkulacja</span></p>
+						<a href="HTML/main.html" class="btn green">Uzupełnij dane</a>
+					</div>
+					<div class="calc-card">
+						<h4 class="car-title">[Marka i Model]</h4>
+						<p class="car-details">[Dane samochodu]</p>
+						<p class="stage">Etap: <span>Oferty</span></p>
+
+						<a href="HTML/list.html" class="btn green">Zobacz oferty</a>
+					</div>
+				</div>
+				<a href="HTML/main.html" class="btn grey">Zrób nową kalkulację</a>
+			</section>
+
+			<section class="purchased-policies">
+				<h3 class="section-title">Kupione polisy</h3>
+				<div class="calc-container">
+					<div class="calc-card">
+						<h4 class="car-title">[UBEZPIECZYCIEL I TYP POLSY]</h4>
+						<p class="car-details">
+							Zakres ochrony:
+							<span>[Szczegóły polisy zgodne z wybranymi kryteriami]</span>
+						</p>
+						<p class="price">Cena: <strong>XXX Zł</strong></p>
+					</div>
+					<div class="calc-card">
+						<h4 class="car-title">[UBEZPIECZYCIEL I TYP POLSY]</h4>
+						<p class="car-details">
+							Zakres ochrony:
+							<span>[Szczegóły polisy zgodne z wybranymi kryteriami]</span>
+						</p>
+						<p class="price">Cena: <strong>XXX Zł</strong></p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p>© 2024 Skanpolis. Wszelkie prawa zastrzeżone.</p>
+		</footer>
+	</body>
+</html>
